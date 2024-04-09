@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:id="@+id/home"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="310dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/search_tab"
+        android:ems="12"
+        android:hint="Search   "
+        android:inputType="text"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@+id/profile_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="391dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-7dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/header" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/square"
+        android:color="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/sneakers"
+        android:layout_width="83dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Sneakers"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/Bottoms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Bottoms"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Tops"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/Tops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Tops"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/sneakers"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Toys"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Bottoms"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Vintage"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Kids"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/popular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-25dp"
+        android:clickable="false"
+        android:text="Popular Brands"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <ImageButton
+        android:id="@+id/roundedSquare"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/roundedsquare"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popular" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/roundedSquare"
+        app:layout_constraintTop_toTopOf="@+id/roundedSquare"
+        app:srcCompat="@drawable/lv" />
+
+    <ImageButton
+        android:id="@+id/roundedSquare1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/roundedsquare"
+        app:layout_constraintStart_toEndOf="@+id/roundedSquare"
+        app:layout_constraintTop_toBottomOf="@+id/popular" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="@+id/roundedSquare1"
+        app:layout_constraintTop_toTopOf="@+id/roundedSquare1"
+        app:srcCompat="@drawable/jd" />
+
+    <View
+        android:id="@+id/roundedSquare2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/roundedsquare"
+        app:layout_constraintStart_toEndOf="@+id/roundedSquare1"
+        app:layout_constraintTop_toBottomOf="@+id/popular" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="@+id/roundedSquare2"
+        app:layout_constraintTop_toTopOf="@+id/roundedSquare2"
+        app:srcCompat="@drawable/chanel" />
+
+    <View
+        android:id="@+id/roundedSquare3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/roundedsquare"
+        app:layout_constraintStart_toEndOf="@+id/roundedSquare2"
+        app:layout_constraintTop_toBottomOf="@+id/popular" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="@+id/roundedSquare3"
+        app:layout_constraintTop_toTopOf="@+id/roundedSquare3"
+        app:srcCompat="@drawable/supreme" />
+
+    <TextView
+        android:id="@+id/recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:clickable="true"
+        android:text="Recommened For You"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popular" />
+
+    <View
+        android:id="@+id/roundedSquareBig"
+        android:layout_width="179dp"
+        android:layout_height="193dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/roundedsquare"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recommend" />
+
+    <ImageButton
+        android:id="@+id/travis1"
+        android:layout_width="170dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/roundedSquareBig"
+        app:layout_constraintTop_toTopOf="@+id/roundedSquareBig"
+        app:srcCompat="@drawable/travis1" />
+
+
+    <TextView
+        android:id="@+id/jordan_1_re"
+        android:layout_width="176dp"
+        android:layout_height="84dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-8dp"
+        android:gravity="top"
+        android:text="Jordan 1 Retro Low OG SP\nTravis Scott Reverse Mocha  Lowest Ask\n $917\n"
+        app:layout_constraintBottom_toBottomOf="@+id/roundedSquareBig"
+        app:layout_constraintStart_toStartOf="@+id/roundedSquareBig"
+        app:layout_constraintTop_toBottomOf="@+id/travis1" />
+
+    <View
+        android:id="@+id/roundedSquareBig1"
+        android:layout_width="179dp"
+        android:layout_height="193dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/roundedsquare"
+        app:layout_constraintStart_toEndOf="@+id/roundedSquareBig"
+        app:layout_constraintTop_toBottomOf="@+id/recommend" />
+
+    <ImageButton
+        android:id="@+id/jd4fr"
+        android:layout_width="170dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitCenter"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/roundedSquareBig1"
+        app:layout_constraintTop_toTopOf="@+id/roundedSquareBig1"
+        app:srcCompat="@drawable/jd4fr" />
+
+    <TextView
+        android:id="@+id/jordan_4_re"
+        android:layout_width="176dp"
+        android:layout_height="84dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:gravity="top"
+        android:text="Jordan 4 Retro\nFire Red (2020) \n Lowest Ask\n $350\n"
+        app:layout_constraintBottom_toBottomOf="@+id/roundedSquareBig1"
+        app:layout_constraintEnd_toEndOf="@+id/roundedSquareBig1"
+        app:layout_constraintStart_toStartOf="@+id/roundedSquareBig1"
+        app:layout_constraintTop_toBottomOf="@+id/jd4fr" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/heart"
+        app:layout_constraintEnd_toEndOf="@+id/roundedSquareBig"
+        app:layout_constraintTop_toTopOf="@+id/roundedSquareBig" />
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/heart"
+        app:layout_constraintEnd_toEndOf="@+id/roundedSquareBig1"
+        app:layout_constraintTop_toTopOf="@+id/roundedSquareBig1" />
+
+    <Button
+        android:id="@+id/profile_button"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_button"
+        app:layout_constraintEnd_toEndOf="@+id/profile_button"
+        app:layout_constraintStart_toStartOf="@+id/profile_button"
+        app:layout_constraintTop_toTopOf="@+id/profile_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Test" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:fontFamily">@font/sf_pro</item>
+    </style>
+
+    <style name="Button.White" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@android:color/white</item>
+
+        <item name="android:fontFamily">@font/sf_pro</item>
+    </style>
+
+
+    <style name="Theme.Test" parent="Base.Theme.Test" />
+
+    <style name="Base.Theme._65067170_home" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#ffffff</item>
+
+        <item name="android:fontFamily">@font/sf_pro</item>
+    </style>
+
+    <style name="Theme._65067170_home" parent="Base.Theme._65067170_home" />
+
+    <style name="Base.Theme._65067170_product_list" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#ffffff</item>
+
+        <item name="android:fontFamily">@font/sf_pro</item>
+    </style>
+
+    <style name="Theme._65067170_product_list" parent="Base.Theme._65067170_product_list" />
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+    </style>
+
+    <style name="Normal.User" parent="Base.Theme.Test">
+        <item name="colorAccent">@android:color/white</item>
+
+        <item name="android:fontFamily">@font/sf_pro</item>
+
+        <item name="backgroundTint">@color/blue</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>
+
+

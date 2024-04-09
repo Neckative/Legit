@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product2_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="383dp"
+        android:layout_height="331dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/roundedsquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="425dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:srcCompat="@drawable/producttv1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Jordan 1 Retro Low OG SP\nTravis Scott Reverse Mocha\n"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <Button
+        android:id="@+id/bid"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/roundedsquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bid"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bid"
+        app:layout_constraintEnd_toEndOf="@+id/bid"
+        app:layout_constraintStart_toStartOf="@id/bid"
+        app:layout_constraintTop_toTopOf="@+id/bid" />
+
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="252dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/roundedsquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buy"
+        app:layout_constraintEnd_toEndOf="@+id/buy"
+        app:layout_constraintStart_toStartOf="@id/buy"
+        app:layout_constraintTop_toTopOf="@+id/buy" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="225dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/roundedsquare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verified By Pro"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/verify"
+        app:layout_constraintEnd_toEndOf="@+id/verify"
+        app:layout_constraintStart_toStartOf="@id/verify"
+        app:layout_constraintTop_toTopOf="@+id/verify" />
+
+    <View
+        android:id="@+id/infomation"
+        android:layout_width="383dp"
+        android:layout_height="245dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/roundedsquare"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verify" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="40dp"
+        android:text="Size : 8.5\nSeller : Anonymous1\nPrice : $900\nCondition : New\nBox : Yes\nSell Placed Date : 01/01/2024\nPro : Legit\nContact : Line Id ynttie\n"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/infomation"
+        app:layout_constraintTop_toTopOf="@+id/infomation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
